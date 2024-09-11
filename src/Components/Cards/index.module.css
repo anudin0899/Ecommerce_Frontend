@@ -1,0 +1,304 @@
+.products {
+  width: 100%;
+  position: relative;
+  transition: box-shadow 0.35s ease;
+  background-color: #fff;
+  margin-bottom: 0 !important;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.products:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.products:hover .productmedia .productAction, .products:focus .productmedia .productAction {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.products .productmedia {
+  position: relative;
+  display: block;
+  background-color: #d7d7d7;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.products .productmedia .productlabel {
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  left: 1rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  letter-spacing: -0.01em;
+  padding: 0.4rem 0.6rem;
+  min-width: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #09A129;
+}
+@media (max-width: 550px) {
+  .products .productmedia .productlabel {
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: 0.6rem;
+    padding: 0.2rem 0.4rem;
+  }
+}
+.products .productmedia .favBtn {
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.2rem;
+}
+.products .productmedia img {
+  background-color: white;
+  background-blend-mode: multiply;
+}
+.products .productmedia .productImage {
+  display: block;
+  width: 100%;
+  height: 240px;
+  border-style: none;
+}
+@media (max-width: 550px) {
+  .products .productmedia .productImage {
+    height: 220px;
+  }
+}
+.products .productmedia .productAction {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 10;
+  transition: all 0.35s ease;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0.6rem 0.4rem;
+  border-top: 0.1rem solid #ebebeb;
+  border-bottom: 0.1rem solid #ebebeb;
+  transform: translateY(100%);
+}
+.products .productmedia .productAction span {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-align: center;
+  color: #3399ff;
+  font-weight: 400;
+  font-size: 14px;
+}
+@media (max-width: 550px) {
+  .products .productmedia .productAction span {
+    flex-direction: column;
+    font-size: 12px;
+  }
+}
+.products .productmedia .productAction span i {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 550px) {
+  .products .productmedia .productAction span i {
+    font-size: 14px;
+  }
+}
+.products .productbody {
+  position: relative;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.35s ease;
+}
+.products .productbody .product_cat {
+  color: #666;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+.products .productbody .product_title {
+  margin-bottom: 0.2rem;
+}
+.products .productbody .product_title h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #333333;
+}
+.products .productbody .product_price {
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #3399ff;
+  margin-bottom: 0.2rem;
+}
+
+/* wishlistcard styling */
+.container {
+  margin: 0 4rem;
+  display: block;
+  padding: 0 20px;
+}
+@media (max-width: 550px) {
+  .container {
+    margin: 0;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .container {
+    margin: 0 1rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+  .container {
+    margin: 0 2rem;
+  }
+}
+.container .wishlist_table {
+  width: 100%;
+  color: #777;
+  margin-bottom: 3rem;
+}
+.container .wishlist_table thead {
+  border-top: none;
+  border-bottom: 0.1rem solid #ebebeb;
+}
+.container .wishlist_table thead th {
+  text-align: start;
+}
+@media (max-width: 550px) {
+  .container .wishlist_table thead {
+    display: none;
+  }
+}
+.container .wishlist_table th,
+.container .wishlist_table td {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-top: none;
+  border-bottom: 0.1rem solid #ebebeb;
+}
+.container .wishlist_table td {
+  vertical-align: middle;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 550px) {
+  .container .wishlist_table td {
+    border-bottom: none;
+  }
+}
+.container .wishlist_table tbody {
+  width: 100%;
+}
+.container .wishlist_table tbody tr {
+  width: 100%;
+}
+@media (max-width: 550px) {
+  .container .wishlist_table tbody tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.1rem solid #ebebeb;
+    position: relative;
+  }
+}
+.container .wishlist_table tbody tr .prod_col {
+  width: 60%;
+}
+@media (max-width: 550px) {
+  .container .wishlist_table tbody tr .prod_col {
+    width: 100%;
+  }
+}
+.container .wishlist_table tbody tr .prod_col .product {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding-right: 2rem;
+  box-shadow: none;
+}
+@media (max-width: 550px) {
+  .container .wishlist_table tbody tr .prod_col .product {
+    padding-right: 0;
+  }
+}
+.container .wishlist_table tbody tr .prod_col .product .product_media {
+  display: flex;
+  flex: 1;
+  margin: 0;
+  margin-right: 2rem;
+}
+.container .wishlist_table tbody tr .prod_col .product .product_media img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 550px) {
+  .container .wishlist_table tbody tr .prod_col .product .product_media img {
+    width: 80px;
+    height: 80px;
+  }
+}
+.container .wishlist_table tbody tr .prod_col .product .product_title {
+  display: flex;
+  flex: 2;
+}
+.container .wishlist_table tbody tr .prod_col .product .product_title h3 {
+  color: #333333;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.25;
+  margin: 0;
+}
+@media (max-width: 550px) {
+  .container .wishlist_table tbody tr .prod_col .product .product_title h3 {
+    font-size: 1rem;
+  }
+}
+.container .wishlist_table tbody tr .price_col {
+  width: 20%;
+  color: #333333;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.container .wishlist_table tbody tr .remove_col {
+  width: 20%;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+}
+@media (max-width: 550px) {
+  .container .wishlist_table tbody tr .remove_col {
+    position: absolute;
+    right: 0.5rem;
+    top: 0;
+    padding: 0.5rem !important;
+    width: auto !important;
+  }
+}
+.container .wishlist_table tbody tr .remove_col button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #09A129;
+}
+
+/* End wishlistcard styling *//*# sourceMappingURL=index.module.css.map */

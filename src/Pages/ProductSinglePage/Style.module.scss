@@ -1,0 +1,168 @@
+@import '../../StyleHelpers/Variables.scss';
+
+
+
+.page_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    .main {
+        width: 100%;
+        margin-top: 10.5rem;
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(md) {
+            margin-top: 7rem;
+        }
+
+        @include mediumScreen {
+            margin-top: 7rem;
+        }
+
+        @include LargeScreen {
+            margin-top: 160px;
+        }
+
+
+        // ProductDetails.scss
+        .product_details_container {
+            width: 100%;
+            padding: 20px 0;
+
+
+            .product_details_content {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                justify-content: center;
+                align-items: center;
+
+                @media (min-width: 768px) {
+                    flex-direction: row;
+                    // gap: 100px;
+                }
+
+
+                .product_image_container {
+                    width: 100%;
+                    max-width: 500px;
+                    margin: auto;
+
+                    @media (min-width: 768px) {
+                        flex: 1.5;
+                        max-width: none;
+                        margin: 0;
+                    }
+                }
+
+                .product_info_container {
+                    flex: 1;
+                    padding: 1.5rem;
+                }
+
+                .product_title {
+                    font-size: 34px;
+                    font-weight: 600;
+                    margin-bottom: 0.75rem;
+                }
+
+                .product_subtitle {
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    margin-bottom: 1.25rem;
+                }
+
+                .product_price {
+                    font-size: 1.125rem;
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                }
+
+                .product_tax_info {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    opacity: 0.5;
+                    margin-bottom: 0.5rem;
+                }
+
+                .size_select_guide {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 0.5rem;
+                }
+
+                .size_label,
+                .select_guide {
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+
+                .size_warning {
+                    color: red;
+                    margin-top: 0.25rem;
+                }
+
+                .size_selection {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 0.5rem;
+                }
+
+                .size_option {
+                    border: 1px solid #000;
+                    border-radius: 9999px;
+                    text-align: center;
+                    padding: 0.75rem;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+
+                .size_option.active {
+                    border-color: #000;
+                }
+
+                .size_option.disabled {
+                    cursor: not-allowed;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    opacity: 0.5;
+                }
+
+                .add_to_cart_btn,
+                .wishlist_btn {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.5rem;
+                    padding: 1rem;
+                    margin-top: 1rem;
+                    border: 1px solid #000;
+                    border-radius: 9999px;
+                    background-color: #000;
+                    color: #fff;
+                    font-size: 1.125rem;
+                    font-weight: 600;
+                    transition: transform 0.2s, opacity 0.2s;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.75;
+                    }
+
+                    &:active {
+                        transform: scale(0.95);
+                    }
+                }
+
+                .wishlist_btn {
+                    border-color: #000;
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

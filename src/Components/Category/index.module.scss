@@ -1,0 +1,99 @@
+@import '../../StyleHelpers/Variables.scss';
+
+/* Home Category Styling */
+
+.container {
+    width: 100%;
+    padding: 20px 60px;
+    background-color: #f3f0f0;
+
+    @include breakpoint(md) {
+        padding: 20px 10px;
+    }
+
+    @include mediumScreen {
+        padding: 20px;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem !important;
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -.025em;
+
+            @include breakpoint(md) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .cat_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .row {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow-x: scroll;
+            overflow-y: hidden;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .col {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 20px;
+
+                @include breakpoint(md) {
+                    padding: 0 10px;
+                }
+
+                .cat_block {
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    @include breakpoint(md) {
+                        width: 120px;
+                        height: 120px;
+                    }
+
+                    span {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+
+                        @include breakpoint(md) {
+                            width: 70px;
+                            height: 70px;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: scale-down;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* End Home Category Styling */

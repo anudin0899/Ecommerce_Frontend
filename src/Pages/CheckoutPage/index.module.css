@@ -1,0 +1,246 @@
+.page_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.page_wrapper .main {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 10.5rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 550px) {
+  .page_wrapper .main {
+    margin-top: 9rem;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .page_wrapper .main {
+    margin-top: 10rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+  .page_wrapper .main {
+    margin-top: 160px;
+  }
+}
+.page_wrapper .main .checkout_wrapper {
+  display: flex;
+  gap: 50px;
+  padding: 40px 80px;
+}
+.page_wrapper .main .checkout_wrapper .card {
+  width: 100%;
+  background: #ffffff;
+}
+.page_wrapper .main .checkout_wrapper .card .title {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #efeff3;
+  font-weight: 700;
+  font-size: 14px;
+  color: #63656b;
+  margin-bottom: 20px;
+}
+.page_wrapper .main .checkout_wrapper button {
+  margin-top: 10px;
+  background-color: #151717;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+}
+.page_wrapper .main .checkout_wrapper button:hover {
+  background-color: #252727;
+}
+.page_wrapper .main .checkout_wrapper .inputForm {
+  border: 1.5px solid #ecedec;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  transition: 0.2s ease-in-out;
+}
+.page_wrapper .main .checkout_wrapper .radioForm {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.page_wrapper .main .checkout_wrapper .input {
+  width: 85%;
+  height: 100%;
+}
+.page_wrapper .main .checkout_wrapper input {
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+.page_wrapper .main .checkout_wrapper .input:focus {
+  outline: none;
+}
+.page_wrapper .main .checkout_wrapper .inputForm:focus-within {
+  border: 1.5px solid #2d79f3;
+}
+.page_wrapper .main .checkout_wrapper label {
+  color: #373737;
+  font-weight: 600;
+  font-size: 14px;
+}
+.page_wrapper .main .checkout_wrapper .left {
+  flex: 1;
+}
+.page_wrapper .main .checkout_wrapper .left .master_container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 5px;
+}
+.page_wrapper .main .checkout_wrapper .left .formWrap {
+  padding: 16px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease;
+}
+.page_wrapper .main .checkout_wrapper .left .formWrap:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.page_wrapper .main .checkout_wrapper .left .formWrap .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 30px;
+  width: 450px;
+  border-radius: 20px;
+}
+.page_wrapper .main .checkout_wrapper .left .formWrap .flex_column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.page_wrapper .main .checkout_wrapper .left .formWrap .flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.page_wrapper .main .checkout_wrapper .left .formWrap .flex_row {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.page_wrapper .main .checkout_wrapper .left .formWrap .span {
+  font-size: 12px;
+  margin-left: 5px;
+  color: #2d79f3;
+  font-weight: 500;
+  cursor: pointer;
+}
+.page_wrapper .main .checkout_wrapper .left .formWrap .p {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.page_wrapper .main .checkout_wrapper .right {
+  flex: 1;
+}
+.page_wrapper .main .checkout_wrapper .right .modal {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+.page_wrapper .main .checkout_wrapper .right .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.page_wrapper .main .checkout_wrapper .right .payment_options {
+  width: calc(100% - 40px);
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  gap: 20px;
+  padding: 10px;
+}
+.page_wrapper .main .checkout_wrapper .right .payment_options button {
+  height: 55px;
+  background: #F2F2F2;
+  border-radius: 11px;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+.page_wrapper .main .checkout_wrapper .right .payment_options button svg {
+  height: 18px;
+}
+.page_wrapper .main .checkout_wrapper .right .payment_options button:last-child svg {
+  height: 22px;
+}
+.page_wrapper .main .checkout_wrapper .right .separator {
+  width: calc(100% - 20px);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  color: #8B8E98;
+  margin: 0 10px;
+}
+.page_wrapper .main .checkout_wrapper .right .separator p {
+  word-break: keep-all;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 11px;
+  margin: auto;
+}
+.page_wrapper .main .checkout_wrapper .right .separator .line {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #e8e8e8;
+  margin: auto;
+}
+.page_wrapper .main .checkout_wrapper .right .credit_card-info_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.page_wrapper .main .checkout_wrapper .right .input_container {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.page_wrapper .main .checkout_wrapper .right .split {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 15px;
+}
+.page_wrapper .main .checkout_wrapper .right .split input {
+  width: 100%;
+}/*# sourceMappingURL=index.module.css.map */

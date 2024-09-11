@@ -1,0 +1,146 @@
+.page_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.page_wrapper .main {
+  width: 100%;
+  margin-top: 10.5rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 550px) {
+  .page_wrapper .main {
+    margin-top: 7rem;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .page_wrapper .main {
+    margin-top: 7rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+  .page_wrapper .main {
+    margin-top: 160px;
+  }
+}
+.page_wrapper .main .product_details_container {
+  width: 100%;
+  padding: 20px 0;
+}
+.page_wrapper .main .product_details_container .product_details_content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .page_wrapper .main .product_details_container .product_details_content {
+    flex-direction: row;
+  }
+}
+.page_wrapper .main .product_details_container .product_details_content .product_image_container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .page_wrapper .main .product_details_container .product_details_content .product_image_container {
+    flex: 1.5;
+    max-width: none;
+    margin: 0;
+  }
+}
+.page_wrapper .main .product_details_container .product_details_content .product_info_container {
+  flex: 1;
+  padding: 1.5rem;
+}
+.page_wrapper .main .product_details_container .product_details_content .product_title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.page_wrapper .main .product_details_container .product_details_content .product_subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+.page_wrapper .main .product_details_container .product_details_content .product_price {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.page_wrapper .main .product_details_container .product_details_content .product_tax_info {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+}
+.page_wrapper .main .product_details_container .product_details_content .size_select_guide {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.page_wrapper .main .product_details_container .product_details_content .size_label,
+.page_wrapper .main .product_details_container .product_details_content .select_guide {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.page_wrapper .main .product_details_container .product_details_content .size_warning {
+  color: red;
+  margin-top: 0.25rem;
+}
+.page_wrapper .main .product_details_container .product_details_content .size_selection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+.page_wrapper .main .product_details_container .product_details_content .size_option {
+  border: 1px solid #000;
+  border-radius: 9999px;
+  text-align: center;
+  padding: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.page_wrapper .main .product_details_container .product_details_content .size_option.active {
+  border-color: #000;
+}
+.page_wrapper .main .product_details_container .product_details_content .size_option.disabled {
+  cursor: not-allowed;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0.5;
+}
+.page_wrapper .main .product_details_container .product_details_content .add_to_cart_btn,
+.page_wrapper .main .product_details_container .product_details_content .wishlist_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #000;
+  border-radius: 9999px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: transform 0.2s, opacity 0.2s;
+  cursor: pointer;
+}
+.page_wrapper .main .product_details_container .product_details_content .add_to_cart_btn:hover,
+.page_wrapper .main .product_details_container .product_details_content .wishlist_btn:hover {
+  opacity: 0.75;
+}
+.page_wrapper .main .product_details_container .product_details_content .add_to_cart_btn:active,
+.page_wrapper .main .product_details_container .product_details_content .wishlist_btn:active {
+  transform: scale(0.95);
+}
+.page_wrapper .main .product_details_container .product_details_content .wishlist_btn {
+  border-color: #000;
+  background-color: #fff;
+  color: #000;
+}/*# sourceMappingURL=Style.module.css.map */
